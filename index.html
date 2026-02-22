@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#mark-attendance">Mark Attendance</a></li>
+            <li><a href="#view-attendance">View Attendance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="mark-attendance">
+            <h2>Mark Attendance</h2>
+            <form id="attendance-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+
+                <button type="submit">Submit Attendance</button>
+            </form>
+        </section>
+
+        <section id="view-attendance">
+            <h2>View Attendance Records</h2>
+            <table id="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Attendance Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
